@@ -1,0 +1,10 @@
+Recurrent Neural Networks (RNNs) are a type of neural network designed to process sequential data, such as text or time-series information.
+In an RNN, each output depends not just on the current input, but also on the previous hidden state, which allows the network to retain some memory of earlier inputs.
+However, standard RNNs suffer from a limitation known as short-term memory.
+This means that while they can remember recent inputs reasonably well, they struggle to retain information from much earlier in the sequence.
+This limitation becomes a problem when long-term dependencies are important—for example, remembering the subject of a sentence to correctly predict the final word.
+The root of this issue lies in the vanishing gradient problem, where gradients used in training become extremely small as they propagate backward through many time steps, effectively preventing early layers from learning.
+As a result, information from earlier inputs fades away, and the network fails to capture long-term context.
+To overcome this, advanced RNN architectures like Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) were developed.
+These architectures use gating mechanisms to control the flow of information, allowing the network to retain important data over longer periods
+and significantly improving performance on complex sequence-based tasks.
